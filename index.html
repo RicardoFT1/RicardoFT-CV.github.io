@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curriculum_Vitae</title>
+    <title>Profolio</title>
     <link rel="shortcut icon" href="img/firmafinal.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/Styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="Main_Container">
+    <div class="Header_Container">
         <header>
             <nav class="Header">
                 <section class="Top_Nav">
@@ -21,27 +20,30 @@
                         </label>
                         <ul class="Menu">
                             <li>
-                                <a href="#Profile">Perfil</a>
+                                <a href="#Profile">Profile</a>
                             </li>
                             <li>
-                                <a href="#Skills">Habilidades</a>
+                                <a href="#Skills">Skills</a>
                             </li>
                             <li>
-                                <a href="#Projects">Proyectos</a>
+                                <a href="#Projects">Projects</a>
                             </li>
                             <li>
-                                <a href="#Work_Done">Trabajos realizados</a>
+                                <a href="#Work_Done">Work Done</a>
                             </li>
                             <li>
-                                <a href="#Footer">Contacto</a>
+                                <a href="#Footer">Contac</a>
                             </li>
                         </ul>
                     </input>
+                    <section class="Change_Language">
+                        <a>Language</a>
+                        <select id="Language" name="Language" onchange="ChangeLanguage();">
+                            <option value="Español" >Español</option>
+                            <option value="English" selected >English</option>
+                        </select>
+                    </section>                    
                 </section>
-                <select name="Language">
-                    <option value="Español" >Español</option>
-                    <option value="English" selected >English</option>
-                </select>
             </nav>
             <section class="Header_Text">
                 <h1>Ricardo Fandiño Toro</h1>
@@ -57,7 +59,7 @@
                         <a href= "https://github.com/RicardoFT1" >GitHub</a>
                     </li>
                     <li>
-                        <a href="CV_Ricardo_Fandiño_29082022.pdf" download=""> Download Resume</a>
+                        <a href="DOCS/CV_Ricardo_Fandiño_29082022.pdf" download="">Download Resume</a>
                     </li>
                 </ul>
             </section>
@@ -69,23 +71,23 @@
         </header>
         <main>
             <section class="Profile" id="Profile">
-                <h2 class="Title">Perfil</h2>
+                <h2 class="Title">Profile</h2>
                 <div class="Profile_Text">
-                    <img src="img/publicidad firma.JPG" alt="" class="imagen-about-us">
+                    <img src="img/foto1.png" alt="" class="imagen_Profile">
                     <div class="Content_Text_Profile">
                         <h3>
-                            <span>1</span>Resumen
+                            <span>1</span>Summary
                         </h3>
                         <p>Científico de datos, Ingeniero Mecatrónico, desarrollador de sistemas y algoritmos para la optimización y automatización de procesos con más de 10 años en el sector de distribución logística y servicio automotriz.</p>
                         <h3>
-                            <span>2</span>Carrera laboral
+                            <span>2</span>Working career
                         </h3>
                         <p>Mi carrera empieza en la empresa Scania Colombia en cargos como auxiliar de almacén, técnico mecánico y encargado de almacenes de susursales, luego de trascurrido 5 años con los diferentes cargos de evolución las jefaturas y gerencias observaron el potencial por mi aprendizaje rápido, capacidad de análisis y resolución de problemas, deciden dejar bajo mi cargo el Centro de Distribución de repuestos para Scania en Colombia, allí demostré mi potencial como desarrollador gracias a mi formación como Tecnólogo en Gestión de sistemas Mecatrónicos y formación actual como Ingeniero Mecatrónico, generando sistemas de control y registro que permitieron agilizar los procesos; es cuando me ofrecen tomar el desafío de ser parte del equipo de desarrollo de sucursales con el enfoque de automatización basada en sistemas computarizados. Actualmente, he desarrollado aplicaciones y sistemas de optimización no solo para las sucursales de Scania en Colombia, se inició trabajo con otras áreas y sectores de la compañía, el resultado de mis proyectos logran captar la atención para aplicar mis habilidades a todo el negocio de Scania en Colombia, he desarrollado un entorno donde he creado bases de datos, aplicaciones, API y RPA además de incluir los análisis y modelamiento de datos, este último gracias a una formación como científico de datos por Scania Suecia y el grupo de formación MIX Suecia.</p>
                     </div>
                 </div>
             </section>
         <section class="Skills" id="Skills">
-            <h2 class="Title">Habilidades</h2>
+            <h2 class="Title">Skills</h2>
             <div class="Cards_Skills">
                 <div class="Card_Skill">
                     <img src="img/scrum1.png" alt="">
@@ -139,7 +141,7 @@
         </section>
         <section class="Projects" id="Projects">
             <div class="Projects_Container">
-                <h2 class="Title">Proyectos</h2>
+                <h2 class="Title">Projects</h2>
                 <div class="Project_Cards">
                     <div class="Project_Card">
                         <img src="img/ilustracion1.svg" alt="">
@@ -161,7 +163,7 @@
         </section>
         <section class="Work_Done" id="Work_Done">
             <div class="Container_Work_Done">
-                <h2 class="Title">Trabajos realizados</h2>
+                <h2 class="Title">Work Done</h2>
                 <div class="Gallery_Work_Done">
                     <div class="Image_Work">
                         <img src="img/Control Herramientas.JPG" alt="">
@@ -170,7 +172,7 @@
                             <p style="text-align:center">
                                 <a href="img/Control Herramientas.JPG" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;">
                                     <span style="font-size:22px">
-                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span>
+                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">go to</span>
                                     </span>
                                 </a>
                             </p>
@@ -183,7 +185,7 @@
                             <p style="text-align:center">
                                 <a href="img/Modelo de datos.jpg" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;">
                                     <span style="font-size:22px">
-                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span>
+                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">go to</span>
                                     </span>
                                 </a>
                             </p>
@@ -196,7 +198,7 @@
                             <p style="text-align:center">
                                 <a href="img/Metodologia Scrum.JPG" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;">
                                     <span style="font-size:22px">
-                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span>
+                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">go to</span>
                                     </span>
                                 </a>
                             </p>
@@ -208,7 +210,7 @@
                             <img src="img/icono1.png" alt="">
                             <p style="text-align:center"><a href="img/Codigo.JPG" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;">
                                 <span style="font-size:22px">
-                                    <span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span>
+                                    <span style="font-family:Trebuchet MS,Helvetica,sans-serif">go to</span>
                                 </span>
                             </a>
                         </p>
@@ -221,7 +223,7 @@
                             <p style="text-align:center">
                                 <a href="img/Algunos RPA.jpg" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;">
                                     <span style="font-size:22px">
-                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span>
+                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">go to</span>
                                     </span>
                                 </a>
                             </p>
@@ -234,7 +236,7 @@
                             <p style="text-align:center">
                                 <a href="img/Power apps.jpg" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;">
                                     <span style="font-size:22px">
-                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span>
+                                        <span style="font-family:Trebuchet MS,Helvetica,sans-serif">go to</span>
                                     </span>
                                 </a>
                             </p>
