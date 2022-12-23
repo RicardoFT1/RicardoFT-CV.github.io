@@ -5,233 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curriculum</title>
+    <title>Portfolio</title>
     <link rel="shortcut icon" href="img/firmafinal.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4d6c69af80.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="contenedorgeneral">
-    <header>
-        <nav class="header">
-            
-            <section class="top-nav">
-                <input id="menu-toggle" type="checkbox">
-                    <label class="menu-button-container" for="menu-toggle">
-                        <div class="menu-button">
-                        </div>
-                    </label>
-                    <ul class="menu">
-                        <li>
-                            <a href="#contenedor sobre-nosotros">Acerca de</a>
-                        </li>
-                        <li>
-                            <a href="#clientes contenedor">Habilidades</a>
-                        </li>
-                        <li>
-                            <a href="#about-services">Proyectos actuales</a>
-                        </li>
-                        <li>
-                            <a href="#portafolio">Trabajos realizados</a>
-                        </li>
-                        <li>
-                            <a href="#contenedor-footer">Contacto</a>
-                        </li>
-                    </ul>
-                </section>
-        </nav>
-
-
-        <section class="textos-header">
-            <h1>Ricardo Fandiño Toro</h1>
-            <h2>Developer full-Stack</h2>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/ricardo-fandino-toro">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://www.credly.com/badges/7ba590e3-6c08-4ab5-a4bb-90cf99afe65e/linked_in">Credly</a>
-                </li>
-                <li>
-                    <a href="CV_Ricardo_Fandiño_29082022.pdf" download=""> Download Resume</a>
-                </li>
-            </ul>
-        </section>
-
-
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
-    </header>
-    <main>
-
-        <section class="contenedor sobre-nosotros" id="contenedor sobre-nosotros">
-            <h2 class="titulo">Acerca de</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/publicidad firma.JPG" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Resumen</h3>
-                    <p>Científico de datos, Ingeniero Mecatrónico, desarrollador de sistemas y algoritmos para la optimización y automatización de procesos con más de 10 años en el sector de distribución logística y servicio automotriz.</p>
-                    <h3><span>2</span>Carrera laboral</h3>
-                    <p>Mi carrera empieza en la empresa Scania Colombia en cargos como auxiliar de almacén, técnico mecánico y encargado de almacenes de susursales, luego de trascurrido 5 años con los diferentes cargos de evolución las jefaturas y gerencias observaron el potencial por mi aprendizaje rápido, capacidad de análisis y resolución de problemas, deciden dejar bajo mi cargo el Centro de Distribución de repuestos para Scania en Colombia, allí demostré mi potencial como desarrollador gracias a mi formación como Tecnólogo en Gestión de sistemas Mecatrónicos y formación actual como Ingeniero Mecatrónico, generando sistemas de control y registro que permitieron agilizar los procesos; es cuando me ofrecen tomar el desafío de ser parte del equipo de desarrollo de sucursales con el enfoque de automatización basada en sistemas computarizados. Actualmente, he desarrollado aplicaciones y sistemas de optimización no solo para las sucursales de Scania en Colombia, se inició trabajo con otras áreas y sectores de la compañía, el resultado de mis proyectos logran captar la atención para aplicar mis habilidades a todo el negocio de Scania en Colombia, he desarrollado un entorno donde he creado bases de datos, aplicaciones, API y RPA además de incluir los análisis y modelamiento de datos, este último gracias a una formación como científico de datos por Scania Suecia y el grupo de formación MIX Suecia.</p>
-                </div>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+               <div class="brand">
+                <h2>R<span>F</span></h2>
+               </div> 
+               <ul class="menu">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+               </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="info-content">
+                <h1>I'm<span>Ricardo</span>Fandiño</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas repudiandae assumenda mollitia quaerat rerum doloribus maiores dolore nulla? Minima excepturi provident unde quaerat accusamus dolore cum qui assumenda at.</p>
+                <a download href="#">
+                    <button class="download-cv" download="download-cv" href="CV_Ricardo_Fandiño_29082022.pdf" >Download CV</button>                
+                </a>
             </div>
-        </section>
-
-
-        <section class="clientes contenedor" id="clientes contenedor">
-            <h2 class="titulo">Habilidades</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/scrum1.png" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Scrum</h4>
-                        <p>Azure DevOps, ScrumDo, IceScrum</p>
-                        <progress max="100" value="90"></progress>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/RPA.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>RPA</h4>
-                        <p>Power Automate Desktop, Power Automate Online, Anywhere.</p>
-                        <progress max="100" value="80"></progress>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/database-icon.jpeg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>BackEnd API</h4>
-                        <p>MySQL, Access, Dataverse, DBeaver, Apache, PHP, IBM bluemix, AWS</p>
-                        <progress max="100" value="40"></progress>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/API.png" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>FrontEnd</h4>
-                        <p>Java, HTML-CSS, C#</p>
-                        <progress max="100" value="60"></progress>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/datascientist.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Data Scientist</h4>
-                        <p>Power BI, Python, Alteryx</p>
-                        <progress max="100" value="80"></progress>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/office-365-applications-view.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Office 365</h4>
-                        <p>Access, Proyect, Power Platform, Teams, Sharepoint, Dataverse etc...</p>
-                        <progress max="100" value="90"></progress>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="about-services" id="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Proyectos actuales</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
-                        <h3>Distribución clientes</h3>
-                        <p>Distribución de clientes y proyección de ventas por sede, basado en la historia de visitas y ventas (Para Scania Colombia).</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
-                        <h3>RPA contact center</h3>
-                        <p>RPA que toma de una base de datos de vehículos próximos a vencer garantía, ofreciendo una reserva para ofrecer un servicio de revisión antes del vencimiento de su garantía (Para Scania Colombia)</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
-                        <h3>Paquetes promocionales</h3>
-                        <p>Sistema que indica al asesor de servicio que paquete promocional ofrecer al ser detectado una anomalía al momento de realizar chequeos por parte de los técnicos en el taller (Para Scania Colombia)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="portafolio" id="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">Algunos trabajos realizados</h2>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/Control Herramientas.JPG" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p style="text-align:center"><a href="img/Control Herramientas.JPG" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;"><span style="font-size:22px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span></span></a></p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/Modelo de datos.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p style="text-align:center"><a href="img/Modelo de datos.jpg" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;"><span style="font-size:22px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span></span></a></p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/Metodologia Scrum.JPG" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p style="text-align:center"><a href="img/Metodologia Scrum.JPG" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;"><span style="font-size:22px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span></span></a></p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/Codigo.JPG" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p style="text-align:center"><a href="img/Codigo.JPG" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;"><span style="font-size:22px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span></span></a></p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/Algunos RPA.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p style="text-align:center"><a href="img/Algunos RPA.jpg" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;"><span style="font-size:22px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span></span></a></p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/Power apps.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p style="text-align:center"><a href="img/Power apps.jpg" onclick="$.magnificPopup.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=yes,fullscreen=no,scrollbars=no,dependent=no,width=700,left=10,height=700,top=10'); return false;"><span style="font-size:22px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Click para ver</span></span></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-    </main>
-    <footer>
-        <div class="contenedor-footer" id="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>3142980464</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>ricardo.fandinit@ecci.edu.co</p>
-            </div>
-            <div class="content-foo">
-                <h4>Location</h4>
-                <p>Bogotá - Colombia</p>
-            </div>
-        </div>
-        <h2 class="titulo-final">&copy; RicardoF Design</h2>
-    </footer>
-</div>
+            <img src="./img/Codigo.JPG" alt="Ricardo Fandiño Picture">
+        </main>
+    </div>
 </body>
-
 </html>
