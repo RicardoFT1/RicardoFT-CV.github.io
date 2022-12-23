@@ -18,6 +18,13 @@ body {
     font-family: 'open sans';
 }
 
+.Main_Container{
+    padding: 32px 0;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;   
+}
 .contenedorgeneral{
     padding: 32px 0;
     width: 100%;
